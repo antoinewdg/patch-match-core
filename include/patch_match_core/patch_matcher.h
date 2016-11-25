@@ -31,13 +31,6 @@ namespace pm {
             typedef typename OffsetMap::offset_type offset_type;
             typedef typename TargetPatches::window_size_type window_size_type;
 
-            // Static asserts to help find out the origin of compilation errors
-            static_assert(std::is_same<s_patch_type, typename OffsetMap::s_patch_type>::value);
-            static_assert(std::is_same<t_patch_type, typename OffsetMap::t_patch_type>::value);
-            static_assert(std::is_same<distance_type, typename DistanceMap::distance_type>::value);
-            static_assert(std::is_same<s_patch_type, typename DistanceFunction::left_type>::value);
-            static_assert(std::is_same<t_patch_type, typename DistanceFunction::right_type>::value);
-
 
             PatchMatcher(const SourcePatches &s, const TargetPatches &t,
                          const DistanceFunction &patch_distance,
