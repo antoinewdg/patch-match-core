@@ -11,6 +11,7 @@ install:
   - sudo apt-get install libboost-all-dev
 
 script:
+  - mkdir bin
   - cd bin
   - cmake ..
   - make
