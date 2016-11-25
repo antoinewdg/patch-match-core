@@ -1,0 +1,17 @@
+language:
+  - cpp
+
+compiler:
+  - gcc
+
+before_install:
+  - sudo apt-get update
+
+install:
+  - sudo apt-get install libboost-all-dev
+
+script:
+  - cd bin
+  - cmake ..
+  - make
+  - ./run_tests
