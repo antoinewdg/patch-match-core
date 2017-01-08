@@ -10,3 +10,7 @@ associated to the previous concepts) and any library.
 
 The cost of this genericity is that it can no be used immediately and needs adapters to be written. For an out-of-the-box 
 solution for OpenCV images, see [this repository](https://github.com/antoinewdg/patch-match-opencv).
+
+## Documentation
+
+This project has currently no documentation because I do not see anyone having an immediate use of it besides myself, if you feel it could be of any use to you or have any question feel free to contact me.
